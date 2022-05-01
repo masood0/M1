@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Css.css">
+  <script src="jquery.js"></script>
+  <title>Eid</title>
+</head>
+<body>
+  <script>
+    if(screen.width>500)
+    ('#me1').css("transform: scale");
+   </script> 
+<div id="me1" class="letter-image " style=" " >
+    <div class="animated-mail">
+      <div class="back-fold"></div>
+      <div class="letter">
+        <div class="letter-border"></div>
+        <div class="letter-title"><I class="istyle1">By Masood</I></div>
+        <div class="letter-context">
+       <p  dir="auto" style="display: flex; position: absolute;"> 
+        <pre>
+       كل عام وانتم بخير 
+        </pre>
+      </p>
+        </div>
+        <div class="letter-stamp">
+          <div id="msg" class="letter-stamp-inner"></div>
+        </div>
+      </div>
+      <div class="top-fold"></div>
+      <div class="body"></div>
+      <div class="left-fold"></div>
+    </div>
+    <div class="shadow"></div>
+  </div>
+
+  <script>
+    $("#msg").append(localStorage.getItem("storageName"));
+</script> 
+  </body>
+</html>
